@@ -18,6 +18,8 @@ dependencies:
   geolocator: ^10.0.0
   get_it: ^7.6.0
   go_router: ^10.1.0
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
   random_name_generator: ^1.1.0
   uuid: ^3.0.7
 
