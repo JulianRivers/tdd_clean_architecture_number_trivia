@@ -38,7 +38,7 @@ class SearchPokemonBloc extends Bloc<SearchPokemonEvent, SearchPokemonState> {
       final resp = await _getCatchedPokemonsUseCase();
       resp.fold(
         (f) => emit(SearchPokemonFailure(failure: f)),
-        (ps) => SearchPokemonList(pokemons: ps),
+        (ps) => emit(SearchPokemonList(pokemons: ps)),
       );
     });
   }
